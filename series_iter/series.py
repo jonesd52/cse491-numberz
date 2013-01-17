@@ -3,12 +3,12 @@
 # obeys the iterator protocol.
 
 class adder(object):
-    def __init__(self):
-        self.n = 0
+    def __init__(self):     # creates instance of adder class
+        self.n = 0          # sets the n value to 0 for 
 
     def __iter__(self):
-        return self
+        return self         # returns value of self
 
-    def next(self):
-        self.n += 1
+    def next(self):         # defines what happens when iterator happens
+        self.n += 1         # ADD 1 to n
         return self.n

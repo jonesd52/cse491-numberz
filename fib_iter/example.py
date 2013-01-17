@@ -1,6 +1,6 @@
 import fib
 
-for n, i in zip(range(3), fib.fib()):
+for n, i in zip(range(5), fib.fib()):
     print i
 
 # additional questions to address:

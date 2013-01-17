@@ -6,3 +6,4 @@ def adder():
     while 1:
         n += 1
         yield n
+      

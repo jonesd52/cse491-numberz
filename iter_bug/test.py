@@ -1,22 +1,33 @@
 import fib
 
+#class fib(object):
+#    def __init__(self):
+#        self.last_1 = 1
+#        self.last_2 = 1
+
+#    def __iter__(self):	
+#        return self
+
+#    def next(self):
+#        next_fib = self.last_1 + self.last_2
+#        self.last_1, self.last2 = self.last_2, next_fib
+#        return next_fib
+
+
 def test1():
     f = fib.fib()
-    i = iter(f)
-    assert i.next() == 2
+    assert f.next() == 2
 
 def test2():
     f = fib.fib()
-    i = iter(f)
-    i.next()
-    assert i.next() == 3
+    f.next()
+    assert f.next() == 3
 
-def test2():
+def test3():
     f = fib.fib()
-    i = iter(f)
-    i.next()
-    i.next()
-    assert i.next() == 5
+    f.next()
+    f.next()
+    assert f.next() == 5
 
 test1()
 test2()
