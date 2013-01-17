@@ -14,6 +14,3 @@ class fib(object):
         next_fib = self.last_1 + self.last_2
         self.last_1, self.last_2 = self.last_2, next_fib
         return next_fib
-        
-    def value(self):
-        return next_fib
