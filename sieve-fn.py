@@ -20,3 +20,4 @@ def next():
 
 for n in range(10):
     print next()
+    
